@@ -1,13 +1,13 @@
 ---
-id: asterisk-ai
-title: Asterisk AI Application Server
-slug: /integrations/asterisk-ai/
+id: AVA-AI-Voice-Agent-for-Asterisk
+title: AVA AI-Voice Agent for Asterisk (Application Server for FSPBX)
+slug: /integrations/ava-ai/
 sidebar_position: 1
 ---
 
 ### Overview
 
-This guide will help you setup an Asterisk AI application server that has two way communication, though some entries are static, it will shed light on the usability of both FreePBX and FusionPBX.  The setup of this took two days of research, using various tools such as OpenAI, Claude, and Grok.
+This guide will help you setup an AVA AI-Voice Agent for Asterisk application server that has two way communication, though some entries are static, it will shed light on the usability of both FreePBX and FusionPBX.  The setup of this took two days of research, using various tools such as OpenAI, Claude, and Grok.
 
 Further documentation and setup is found by going to: https://github.com/hkjarral/Asterisk-AI-Voice-Agent/
 
@@ -17,13 +17,14 @@ At the time of writing this, the development was fairly active, and offers a Dis
 
 ### Servers
 - 2 vCPU/4G of ram/50G of space - FS PBX
-- 2 vCPU/8G of ram/50G of space - FreePBX & Asterisk AI
+- 2 vCPU/8G of ram/50G of space - FreePBX & AVA AI-Voice Agent for Asterisk
+- GPU server with Ollama
 
-FreePBX, Asterisk AI, and Ollama can operate off of the same system.  If you choose to locally host your LLM or have a machine that handles Ollama (current support) you will have the option in the configuration on which IP to communicate with Ollama's API.
+FreePBX, AVA AI-Voice Agent for Asterisk, and Ollama can operate off of the same system.  If you choose to locally host your LLM or have a machine that handles Ollama (current support) you will have the option in the configuration on which IP to communicate with Ollama's API.
 
 ### Demonstration
 
-In our demonstration we will be setting up Asterisk AI to host two contexts, with appropriate settings in FreePBX (Asterisk) and FS PBX respectively.
+In our demonstration we will be setting up AVA AI-Voice Agent for Asterisk to host two contexts, with appropriate settings in FreePBX (Asterisk) and FS PBX respectively.
 
 This assumes you'll be hosting Ollama on a dedicated system.
 
@@ -114,7 +115,7 @@ fs_cli -x "reloadxml"
 
 ---
 
-## Quick Start to setting up Asterisk AI
+## Quick Start to setting up AVA AI-Voice Agent for Asterisk
 
 Get the **Admin UI running in 2 minutes** while on the Debian instance, GIT should be installed, and in having so, the following is the howto for installation:
 
@@ -278,7 +279,7 @@ And click **Submit**
 
 ---
 
-As far as configuration goes, for Asterisk AI, we strongly encourage you review the [documentation](https://github.com/hkjarral/Asterisk-AI-Voice-Agent?tab=readme-ov-file#-documentation), we also encourage checking out their [Discord](https://discord.gg/ysg8fphxUe).  The maintainer is quite active, and if you've caught him at a good time will offer assistance.  
+As far as configuration goes, for AVA AI-Voice Agent for Asterisk, we strongly encourage you review the [documentation](https://github.com/hkjarral/Asterisk-AI-Voice-Agent?tab=readme-ov-file#-documentation), we also encourage checking out their [Discord](https://discord.gg/ysg8fphxUe).  The maintainer is quite active, and if you've caught him at a good time will offer assistance.  
 
 Be sure to support the work of the maintainer by going [here](https://ko-fi.com/asteriskaivoiceagent).
 
